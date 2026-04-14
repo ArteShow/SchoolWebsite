@@ -4,3 +4,30 @@
     font-family: "Roboto", sans-serif;
     margin: 0px;
 }
+
+body nav {
+    display: flex;
+    flex-direction: column;
+    background-color:   #eba43a;
+    position: relative;
+}   
+
+body nav .top_nav {
+    background-color: #221604;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 50px;
+}
+body nav .top_nav .nav_links {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.logo {
+  position: absolute;
+  left: 0px;
+
+}
