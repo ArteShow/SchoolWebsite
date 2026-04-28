@@ -1,0 +1,97 @@
+body nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e293b; 
+    position: relative;
+    height: auto;
+    border-bottom: 1px solid #334155;
+}   
+
+body nav .top_nav {
+    background-color: #020617; 
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 60px;
+}
+
+body nav .top_nav .nav_links {
+    display: flex;
+    gap: 40px;
+}
+
+body nav .top_nav .nav_links a {
+    text-decoration: none;
+    color: #94a3b8; 
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+body nav .top_nav .nav_links a:hover {
+    color: #38bdf8; 
+    transform: scale(1.05);
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+}
+
+nav .gamemods_list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+nav .gamemods_list li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    align-items: center;
+    background-color: #334155; 
+    border-radius: 12px;
+    width: 120px; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    list-style: none;
+}
+
+nav .gamemods_list li:hover {
+    transform: translateY(-10px);
+    background-color: #475569;
+}
+
+nav .gamemods_list li img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-top: 15px;
+    border: 2px solid #38bdf8;
+}
+
+nav .gamemods_list li button {
+    border-radius: 8px;
+    border: none;
+    width: 80%;
+    padding: 8px 0;
+    margin-bottom: 15px;
+    background-color: #38bdf8; 
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}   
+
+nav .gamemods_list li button:hover {
+    background-color: #7dd3fc;
+    transform: scale(1.05);
+}
+
+nav .gamemods_list li button:active {
+    background-color: #0ea5e9;
+    transform: scale(0.95);
+}

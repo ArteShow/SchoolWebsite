@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
@@ -54,26 +56,68 @@
         </div>
     </nav>
     <main>
-        <h1>Sword</h1>
-        <table>
+        <h1 id="gamemode">Sword</h1>
+        <table class="player-table" id="players">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Tier</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
-                    <td>Marlowww</td>
-                    <td>HT1</td>
-                    <td>Retired</td>
+                    <td class="player-info">
+                        <img src="/images/players/marlowww.png" alt="marlowww" class="player-icon">
+                        <span class="name">Marlowww</span>
+                    </td>
+                    <td class="tier">HT1</td>
+                    <td class="retired">Retired</td>
                 </tr>
                 <tr>
-                    <td>Marlowww</td>
-                    <td>HT1</td>
-                    <td>Retired</td>
+                    <td class="player-info">
+                        <img src="/images/players/marlowww.png" alt="marlowww" class="player-icon">
+                        <span class="name">Marlowww</span>
+                    </td>
+                    <td class="tier">HT1</td>
+                    <td class="retired">Retired</td>
                 </tr>
                 <tr>
-                    <td>Marlowww</td>
-                    <td>HT1</td>
-                    <td>Retired</td>
+                    <td class="player-info">
+                        <img src="/images/players/marlowww.png" alt="marlowww" class="player-icon">
+                        <span class="name">Marlowww</span>
+                    </td>
+                    <td class="tier">HT1</td>
+                    <td class="retired">Retired</td>
                 </tr>
             </tbody>
         </table>
     </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2 class="footer-logo">ARTEMIY<span>SOKOLOV</span></h2>
+                <p>Enter your short bio or site description here. Keep it brief and engaging for your visitors.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#gamemode">Game Mods</a></li>
+                    <li><a href="#players">Player Rankings</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Artemiy Sokolov | All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
