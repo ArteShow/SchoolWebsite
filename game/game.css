@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body nav {
+    width: 100%;
+}
+
+.box {
+    width: 800px;
+    height: 600px;
+    background: linear-gradient(135deg, #58ff6e, #118521);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px black;
+    margin-top: 150px;
+}
