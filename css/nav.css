@@ -73,7 +73,7 @@ nav .gamemods_list li img {
     border: 2px solid #38bdf8;
 }
 
-nav .gamemods_list li button {
+nav .gamemods_list li a {
     border-radius: 8px;
     border: none;
     width: 80%;
@@ -84,14 +84,16 @@ nav .gamemods_list li button {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
+    text-align: center;
+    text-decoration: none;
 }   
 
-nav .gamemods_list li button:hover {
+nav .gamemods_list li a:hover {
     background-color: #7dd3fc;
     transform: scale(1.05);
 }
 
-nav .gamemods_list li button:active {
+nav .gamemods_list li a:active {
     background-color: #0ea5e9;
     transform: scale(0.95);
 }
