@@ -21,6 +21,14 @@ body h1 {
     color: #f8fafc;
 }
 
+body p {
+    margin: 40px auto; 
+    max-width: 600px;  
+    text-align: center; 
+    line-height: 1.6;  
+    display: block;
+}
+
 .player-table {
     width: 90%;
     max-width: 1000px;
