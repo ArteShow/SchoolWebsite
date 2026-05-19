@@ -1,3 +1,4 @@
 # SchoolWebsite
 
-This is a training website
+This is a Copy of MC tiers with a game which was build using phaser
+
