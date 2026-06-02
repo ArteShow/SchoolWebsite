@@ -18,6 +18,7 @@ let config = {
 }
 
 let player = null
+let cursors = null
 
 function preload() {
     this.load.image("clouds", "./images/clouds.jpg")
@@ -27,10 +28,22 @@ function preload() {
 function create() {
     this.add.tileSprite(0, 0, 800, 600, "clouds").setOrigin(0, 0)
     player = this.physics.add.sprite(400, 300, "bullet")
+
+    cursors = this.input.keyboard.createCursorKeys()
 }
 
 function update() {
     player.setCollideWorldBounds(true)
+
+    if (cursors.left.isDown) {
+        player.setFlipX(false)
+        player.x -= 5;
+    } if (cursors.right.isDown) {
+        player.setFlipX(true)
+        player.x += 5;
+    } if (cursors.space.isDown) {
+        player.setVelocityY(-1000)
+    }
 }
 
 let game = new Phaser.Game(config) 
