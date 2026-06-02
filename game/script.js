@@ -17,6 +17,8 @@ let config = {
     }
 }
 
+let player = null
+
 function preload() {
     this.load.image("clouds", "./images/clouds.jpg")
     this.load.image("bullet", "./images/bullet.png")
@@ -24,11 +26,11 @@ function preload() {
 
 function create() {
     this.add.tileSprite(0, 0, 800, 600, "clouds").setOrigin(0, 0)
-    this.add.tileSprite(400, 300, 30, 30, "bullet")
+    player = this.physics.add.sprite(400, 300, "bullet")
 }
 
 function update() {
-    
+    player.setCollideWorldBounds(true)
 }
 
 let game = new Phaser.Game(config) 
