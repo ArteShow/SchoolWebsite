@@ -34,6 +34,7 @@ function create() {
 
 function update() {
     player.setCollideWorldBounds(true)
+    player.setBounce(0.8)
 
     if (cursors.left.isDown) {
         player.setFlipX(false)
@@ -42,7 +43,7 @@ function update() {
         player.setFlipX(true)
         player.x += 5;
     } if (cursors.space.isDown) {
-        player.setVelocityY(-1000)
+        player.setVelocityY(-500)
     }
 }
 
