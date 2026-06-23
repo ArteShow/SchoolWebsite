@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <script src="../phaser.min.js"></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
-    <title>Game</title>
+    <title>Sky Dash & Dodge</title>
 </head>
 <body>
     <nav>
@@ -17,11 +17,21 @@
             </div>
             <div class="nav_links">
                 <a href="../index.html">Home</a>
-                <a href="game.html">Game</a>
+                <a href="game.html" class="active">Game</a>
             </div>
         </div>
     </nav>
-    <div id="box"></div>
+
+    <div class="game-container">
+        <div id="box"></div>
+        
+        <div class="controls-guide">
+            <div class="control-key"><span>A</span> / <span>D</span> Move</div>
+            <div class="control-key"><span>SPACE</span> Jump / Double Jump</div>
+            <div class="control-key"><span>SHIFT</span> + Direction Hyper-Dash (5s CD)</div>
+            <div class="control-key"><span>ESC</span> Pause</div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
